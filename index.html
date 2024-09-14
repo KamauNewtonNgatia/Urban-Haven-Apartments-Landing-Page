@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>urban haven apartments landing page</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -15,17 +22,17 @@
           <li class="header-nav-items">
             <a href="#" class="header-nav-link">home</a>
           </li>
-          <li class="header-nav-items">
+          <li class="header-nav-items" id="contact">
             <a href="#" class="header-nav-link">contact</a>
           </li>
-          <li class="header-nav-items">
+          <li class="header-nav-items" id="about-us">
             <a href="#" class="header-nav-link">about us</a>
           </li>
-          <li class="header-nav-items">
+          <li class="header-nav-items" id="rooms">
             <a href="#" class="header-nav-link">rooms</a>
           </li>
-          <li class="header-nav-items">
-            <a href="#" class="header-nav-link">amenities</a>
+          <li class="header-nav-items" id="amenities">
+            <a href="#" class="header-nav-link" id>amenities</a>
           </li>
         </ol>
       </nav>
@@ -289,7 +296,72 @@
         </div>
       </div>
     </section>
-
     <!--end of Available Amenities-->
+
+    <!--contact us section-->
+    <h2 class="tittle">contact us</h2>
+    <section class="contact-us-section">
+      <div class="contact-form">
+        <h3 class="u-tittle">contact form</h3>
+        <form class="contact-us-form">
+          <label for="fname" class="contact-form-text">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            placeholder="Newton"
+            required
+          /><br /><br />
+
+          <label for="lname" class="contact-form-text">Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            placeholder="Kamau"
+            required
+          /><br /><br />
+
+          <label for="email" class="contact-form-text">Email address:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="newton11@gmail.com"
+            required
+          /><br /><br />
+
+          <label for="message" class="contact-form-text">Message:</label>
+          <textarea name="message" id="message"></textarea> <br /><br />
+
+          <button type="submit" class="submit-button">Submit</button
+          ><br /><br />
+        </form>
+      </div>
+      <div class="contact-info">
+        <h3 class="u-tittle">contact info</h3>
+        <p class="contact-info-text">Dial: +254718764327</p>
+        <p class="contact-info-text">Email: urhaven@apartments.com</p>
+        <p class="contact-info-text">Location: Kiharu, Murang'a</p>
+
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--end of contact us section-->
+    <!--footer-->
+    <footer class="footer">
+      <p class="footer-text">
+        All rights reserved. built with &hearts; by
+        <a href="https://github.com/KamauNewtonNgatia" target="_blank"
+          >Kamau Newton</a
+        >
+      </p>
+    </footer>
+    <!-- end of footer-->
   </body>
 </html>
