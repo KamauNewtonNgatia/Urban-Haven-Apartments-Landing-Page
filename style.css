@@ -1,61 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%S;
- 
 }
 
-body{
+body {
   font-size: 1.2rem;
   font-family: "Josefin Sans", sans-serif;
 }
 
-:root{
+:root {
   --color-black: #111;
   --color-primary: rgb(248, 252, 7);
 }
 /* header stylings*/
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
 }
 @media screen and (max-width: 50em) {
- .header {flex-direction: column;
-  gap: 1rem;
- }
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
-.logo{
+.logo {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.header-nav-list{
+.header-nav-list {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
-@media screen and (max-width: 35em){
-  .header-nav-list{
-    flex-wrap: wrap ;
+@media screen and (max-width: 35em) {
+  .header-nav-list {
+    flex-wrap: wrap;
     justify-content: center;
   }
-  
 }
 
-.header-nav-link{
+.header-nav-link {
   text-decoration: none;
   text-transform: capitalize;
   color: var(--color-black);
   font-weight: 700;
-  transition: color .3s;
+  transition: color 0.3s;
 }
-.header-nav-link: hover {
-  color: var(--color-primary)
+
+.header-nav-link:hover {
+  color: var(--color-primary);
 }
 /* end of header stylings*/
+
+/*hero-section*/
+.hero-section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/herosection.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+.hero-tittle {
+  color: var(--color-primary);
+}
+.textbox {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+@media screen and (max-width: 120em) {
+  .textbox {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 120em) {
+  .textbox {
+    width: 32em;
+    font-size: 2rem;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 120em) {
+  .textbox {
+    width: 96%;
+  }
+}
+.hero-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 2rem 2rem;
+}
+/*end of hero-section*/
+
+/* rooms section */
+.tittle {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  padding: 2rem;
+}
+
+.room-items-container {
+  padding-inline: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  flex-wrap: wrap;
+
+}
+
+.room-card {
+  width: 30rem;
+  background-color: gray;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.rooom-card-image {
+  width: 100%;
+  height: 200px;
+}
+
+.room-card-details {
+  padding: 1rem;
+}
+
+.room-card-tittle {
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.room-card-description {
+  line-height: 1.5;
+}
+
+.room-card-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.room-cta {
+  border: none;
+  outline: none;
+  color: var(--color-black);
+  text-transform: capitalize;
+  padding: 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: grab;
+}
+.room-price {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+/* rooms section */
+
+/* more-rooms stylings */
+.more-rooms{
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: var(--color-primary);
+  display: block;
+  margin: 1rem auto;
+  width: max-content;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+/* end of more-rooms stylings */
+
