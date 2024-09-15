@@ -41,6 +41,23 @@ body {
     gap: 1rem;
   }
 }
+
+.scroll-to-top{
+  text-decoration: none;
+  color: var(--color-primary);
+  background-color: var(--color-black);
+  font-size: 4rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+}
+
 .logo {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -332,9 +349,11 @@ body {
 .social-link {
   gap: 2rem;
   justify-content: space-between;
+  text-decoration: none;
+  font-size: 3rem;
 }
 
-@media and (max-width: 50em) {
+@media screen and (max-width: 50em) {
   .contact-us-section {
     display-direction: column;
     flex-wrap: wrap;
